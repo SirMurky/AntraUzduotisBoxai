@@ -103,3 +103,45 @@ export default class App extends Component<{}> {
     );
   }
 }
+//const Box = ({align}) => (
+ // <View style={styles.flexBox1}/>
+//)
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: '#acb5c4'
+  },
+  flexbox1: {
+    flex: 1,
+    justifyContent: 'space-around',
+    
+    },
+  flexbox2: {
+    flex:1,
+    backgroundColor: '#666666',
+    justifyContent: 'space-around'
+    },
+    button: {
+      height: 60,
+      width: 120,
+      backgroundColor: 'transparent',
+      borderColor: '#ffd700',
+      borderWidth: 4,
+      borderRadius: 1,
+      textAlign: 'center',
+      marginLeft: 30,
+      padding: 15,
+      fontWeight: 'bold'
+    },
+    redBox: {
+      height: 135,
+      textAlign: 'center',
+      fontSize: 18,
+      fontWeight: 'bold',
+      width: 160,
+      marginLeft: 10,
+      padding: 50
+    },
+  
+});
