@@ -58,3 +58,48 @@ export default class App extends Component<{}> {
       var backgroundColor = spalva4;
       this.setState({spalvaD: backgroundColor})
     }
+    
+  
+
+  render() {
+    return (
+      
+      <View style={styles.container}>
+              <View style={styles.flexbox1}>
+              <TouchableOpacity onPress = {() => this.spalvaKeiciasi()}>
+              <Text style = {styles.button}>
+                 Button1
+              </Text>
+           </TouchableOpacity>
+  
+           <TouchableOpacity onPress = {()=> {this.spalvaKeiciasi1()}}>
+           <Text style = {styles.button}>
+              Button2
+           </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress = {()=> {this.spalvaKeiciasi2()}}>
+        <Text style = {styles.button}>
+           Button3
+        </Text>
+     </TouchableOpacity>
+
+     <TouchableOpacity onPress = {()=> {this.spalvaKeiciasi3()}}>
+     <Text style = {styles.button}>
+        Button4
+     </Text>
+      </TouchableOpacity>
+
+              </View>
+              <View style={styles.flexbox2}>
+              <Text style={[styles.redBox, {color: this.state.spalvaA},{backgroundColor: this.state.spalvaE}]}>Box1</Text>
+              <Text style={[styles.redBox, {color: this.state.spalvaB},{backgroundColor: this.state.spalvaE}]}>Box2</Text>
+              <Text style={[styles.redBox, {color: this.state.spalvaC},{backgroundColor: this.state.spalvaE}]}>Box3</Text>
+              <Text style={[styles.redBox, {color: this.state.spalvaD},{backgroundColor: this.state.spalvaE}]}>Box4</Text>
+              </View>
+      </View>
+      
+
+    );
+  }
+}
